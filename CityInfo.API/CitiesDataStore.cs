@@ -19,19 +19,58 @@ namespace CityInfo.API
                 {
                     Id = 1,
                     Name = "New York City",
-                    Description = "The Big Apple."
+                    Description = "The Big Apple.",
+                    PointsOfInterest = new List<PointOfInterestDto>()
+                    {
+                        new PointOfInterestDto()
+                        {
+                            Id = 1,
+                            Name = "Central Park",
+                            Description = "The most visited urban park in the United States"
+                        },
+                        new PointOfInterestDto()
+                        {
+                            Id = 2,
+                            Name = "Empire State Building",
+                            Description = "A 102-story skyscraper located in Midtown Manhattan"
+                        }
+                    }
                 },
                 new CityDto()
                 {
                     Id = 2,
                     Name = "Melbourne",
-                    Description = "The City of Coffee."
+                    Description = "The City of Coffee.",
+                    PointsOfInterest = new List<PointOfInterestDto>()
+                    {
+                        new PointOfInterestDto()
+                        {
+                            Id = 1,
+                            Name = "Queen Victoria Market",
+                            Description = "Buy goods in a stall market"
+                        },
+                        new PointOfInterestDto()
+                        {
+                            Id = 2,
+                            Name = "Yarra River",
+                            Description = "The river that passes through the city and thoughout Victoria"
+                        }
+                    }
                 },
                 new CityDto()
                 {
                     Id = 3,
                     Name = "Paris",
-                    Description = "Big Metal Tower."
+                    Description = "Big Metal Tower.",
+                    PointsOfInterest = new List<PointOfInterestDto>()
+                    {
+                        new PointOfInterestDto()
+                        {
+                            Id = 1,
+                            Name = "Eiffel Tower",
+                            Description = "A 324 meter tall tower"
+                        }
+                    }
                 }
             };
         }
